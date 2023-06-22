@@ -16,6 +16,7 @@ struct SignUpView: View {
     @State private var errorMessage: String = ""
     
     @EnvironmentObject private var model: Model
+    @EnvironmentObject private var appState: AppState
     
     private var isFormValid: Bool {
         !email.isEmptyOrWhiteSpace && !password.isEmptyOrWhiteSpace && !displayName.isEmptyOrWhiteSpace
@@ -47,8 +48,7 @@ struct SignUpView: View {
                 }.disabled(!isFormValid)
                     .buttonStyle(.borderless)
                 Button("Login") {
-                    // take the user to login screen
-                    
+                    appState.routes.append(.login)
                 }.buttonStyle(.borderless)
                 Spacer()
 
@@ -61,6 +61,8 @@ struct SignUpView: View {
 
 struct SignUpView_Previews: PreviewProvider {
     static var previews: some View {
-        SignUpView().environmentObject(Model())
+        SignUpView()
+            .environmentObject(Model())
+            .environmentObject(AppState())
     }
 }
