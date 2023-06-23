@@ -10,10 +10,22 @@ import SwiftUI
 struct AddNewGroupView: View {
     
     @Environment(\.dismiss) private var dismiss
+    @EnvironmentObject private var model: Model
     @State private var groupSubject: String = ""
     
     private var isFormValid: Bool {
         !groupSubject.isEmptyOrWhiteSpace
+    }
+    
+    private func saveGroup() {
+        let group = Group(subject: groupSubject)
+        model.saveGroup(group: group) { error in
+            if let error {
+                print(error.localizedDescription)
+            }
+            
+            dismiss()
+        }
     }
     
     var body: some View {
@@ -38,7 +50,7 @@ struct AddNewGroupView: View {
                 
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button("Create") {
-                        
+                        saveGroup()
                     }.disabled(!isFormValid)
                 }
             }.padding()
@@ -50,5 +62,6 @@ struct AddNewGroupView: View {
 struct AddNewGroupView_Previews: PreviewProvider {
     static var previews: some View {
         AddNewGroupView()
+            .environmentObject(Model())
     }
 }

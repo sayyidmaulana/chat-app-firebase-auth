@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B339F212A457EB50054B29B /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B339F202A457EB50054B29B /* Group.swift */; };
 		0B3F7B5D2A43F78700136825 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3F7B5C2A43F78700136825 /* MainView.swift */; };
 		0B3F7B5F2A43F8EE00136825 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3F7B5E2A43F8EE00136825 /* AppState.swift */; };
 		0B3F7B612A44372300136825 /* GroupListContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3F7B602A44372300136825 /* GroupListContainerView.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B339F202A457EB50054B29B /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
 		0B3F7B5C2A43F78700136825 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		0B3F7B5E2A43F8EE00136825 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		0B3F7B602A44372300136825 /* GroupListContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupListContainerView.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 			children = (
 				0B9E06D32A3AEC3E00BF8DA4 /* Model.swift */,
 				0B3F7B5E2A43F8EE00136825 /* AppState.swift */,
+				0B339F202A457EB50054B29B /* Group.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -206,6 +209,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B339F212A457EB50054B29B /* Group.swift in Sources */,
 				0B9E06D82A3AEE5500BF8DA4 /* LoginView.swift in Sources */,
 				0B3F7B632A44380700136825 /* AddNewGroupView.swift in Sources */,
 				0B3F7B5D2A43F78700136825 /* MainView.swift in Sources */,
