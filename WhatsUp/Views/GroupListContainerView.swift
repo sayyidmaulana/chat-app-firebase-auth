@@ -10,6 +10,7 @@ import SwiftUI
 struct GroupListContainerView: View {
     
     @State private var isPresented: Bool = false
+    @EnvironmentObject private var model: Model
     
     var body: some View {
         VStack {
@@ -20,8 +21,18 @@ struct GroupListContainerView: View {
                 }
             }
             
+            GroupListView(groups: model.groups)
+            
             Spacer()
-        }.padding()
+        }
+        .task {
+            do {
+                try await model.populateGroups()
+            } catch {
+                print(error)
+            }
+        }
+        .padding()
             .sheet(isPresented: $isPresented) {
                 AddNewGroupView()
             }
@@ -31,5 +42,6 @@ struct GroupListContainerView: View {
 struct GroupListContainerView_Previews: PreviewProvider {
     static var previews: some View {
         GroupListContainerView()
+            .environmentObject(Model())
     }
 }

@@ -23,6 +23,7 @@
 		0B8E681F2A386F6A00066701 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 0B8E681E2A386F6A00066701 /* FirebaseStorage */; };
 		0B9E06D42A3AEC3E00BF8DA4 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9E06D32A3AEC3E00BF8DA4 /* Model.swift */; };
 		0B9E06D82A3AEE5500BF8DA4 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9E06D72A3AEE5500BF8DA4 /* LoginView.swift */; };
+		0BB592562A4ABCE0008AFEF2 /* GroupListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB592552A4ABCE0008AFEF2 /* GroupListView.swift */; };
 		0BBF9FCA2A3965AF00685FD3 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBF9FC92A3965AF00685FD3 /* SignUpView.swift */; };
 		0BBF9FCD2A39731700685FD3 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBF9FCC2A39731700685FD3 /* String+Extensions.swift */; };
 /* End PBXBuildFile section */
@@ -41,6 +42,8 @@
 		0B8E68152A386E6600066701 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0B9E06D32A3AEC3E00BF8DA4 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		0B9E06D72A3AEE5500BF8DA4 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		0BB592542A49D518008AFEF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		0BB592552A4ABCE0008AFEF2 /* GroupListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupListView.swift; sourceTree = "<group>"; };
 		0BBF9FC92A3965AF00685FD3 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		0BBF9FCC2A39731700685FD3 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -79,6 +82,7 @@
 		0B8E68062A386D9C00066701 /* WhatsUp */ = {
 			isa = PBXGroup;
 			children = (
+				0BB592542A49D518008AFEF2 /* Info.plist */,
 				0B9E06D22A3AEC2B00BF8DA4 /* Models */,
 				0BBF9FCB2A3972DC00685FD3 /* Extensions */,
 				0BBF9FC82A39659000685FD3 /* Views */,
@@ -117,6 +121,7 @@
 				0B3F7B5C2A43F78700136825 /* MainView.swift */,
 				0B3F7B602A44372300136825 /* GroupListContainerView.swift */,
 				0B3F7B622A44380700136825 /* AddNewGroupView.swift */,
+				0BB592552A4ABCE0008AFEF2 /* GroupListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -219,6 +224,7 @@
 				0B8E680A2A386D9C00066701 /* ContentView.swift in Sources */,
 				0B3F7B612A44372300136825 /* GroupListContainerView.swift in Sources */,
 				0BBF9FCA2A3965AF00685FD3 /* SignUpView.swift in Sources */,
+				0BB592562A4ABCE0008AFEF2 /* GroupListView.swift in Sources */,
 				0B8E68082A386D9C00066701 /* WhatsUpApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -351,7 +357,7 @@
 				DEVELOPMENT_TEAM = T6A987SHK3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = WhatsUp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -380,7 +386,7 @@
 				DEVELOPMENT_TEAM = T6A987SHK3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = WhatsUp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
