@@ -22,6 +22,7 @@ struct AddNewGroupView: View {
         model.saveGroup(group: group) { error in
             if let error {
                 print(error.localizedDescription)
+                print("test ssh")
             }
             
             dismiss()
