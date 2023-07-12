@@ -25,7 +25,20 @@ struct GroupDetailView: View {
     
     var body: some View {
         VStack {
-            ChatMessageListView(chatMessages: model.chatMessages)
+            
+            ScrollViewReader { proxy in
+                ChatMessageListView(chatMessages: model.chatMessages)
+                    .onChange(of: model.chatMessages) { value in
+                        if !model.chatMessages.isEmpty {
+                            let lastChatMessage = model.chatMessages[model.chatMessages.endIndex - 1]
+                            withAnimation {
+                                proxy.scrollTo(lastChatMessage.id, anchor: .bottom)
+                            }
+                        }
+                    }
+            }
+            
+            Spacer()
             TextField("Enter chat message", text: $chatText)
             Button("Send") {
                 Task {
