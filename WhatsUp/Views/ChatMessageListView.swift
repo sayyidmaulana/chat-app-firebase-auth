@@ -34,7 +34,7 @@ struct ChatMessageListView: View {
                             }
                         } else {
                             HStack {
-                                ChatMessageView(chatMessage: chatMessage, direction: .left, color: .blue)
+                                ChatMessageView(chatMessage: chatMessage, direction: .left, color: .gray)
                                 Spacer()
                             }
                         }
