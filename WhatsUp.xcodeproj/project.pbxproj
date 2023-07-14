@@ -18,6 +18,9 @@
 		0B5278182A60F5AB00BF2E85 /* UIImagePickerController.SourceType+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5278172A60F5AB00BF2E85 /* UIImagePickerController.SourceType+Extensions.swift */; };
 		0B52781A2A60F9B200BF2E85 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5278192A60F9B200BF2E85 /* UIImage+Extensions.swift */; };
 		0B52781C2A60FD6B00BF2E85 /* Storage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B52781B2A60FD6B00BF2E85 /* Storage+Extensions.swift */; };
+		0B52781E2A61353700BF2E85 /* ChatMessageInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B52781D2A61353700BF2E85 /* ChatMessageInputView.swift */; };
+		0B5278202A61357300BF2E85 /* GroupDetailConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B52781F2A61357300BF2E85 /* GroupDetailConfig.swift */; };
+		0B5278222A6150A800BF2E85 /* PreviewImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5278212A6150A800BF2E85 /* PreviewImageView.swift */; };
 		0B55638F2A5FDCD300A70F89 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B55638E2A5FDCD300A70F89 /* SettingsView.swift */; };
 		0B5563912A5FDD4600A70F89 /* Image+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5563902A5FDD4600A70F89 /* Image+Extensions.swift */; };
 		0B5563932A5FE13800A70F89 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5563922A5FE13800A70F89 /* ImagePicker.swift */; };
@@ -50,6 +53,9 @@
 		0B5278172A60F5AB00BF2E85 /* UIImagePickerController.SourceType+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImagePickerController.SourceType+Extensions.swift"; sourceTree = "<group>"; };
 		0B5278192A60F9B200BF2E85 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
 		0B52781B2A60FD6B00BF2E85 /* Storage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storage+Extensions.swift"; sourceTree = "<group>"; };
+		0B52781D2A61353700BF2E85 /* ChatMessageInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessageInputView.swift; sourceTree = "<group>"; };
+		0B52781F2A61357300BF2E85 /* GroupDetailConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupDetailConfig.swift; sourceTree = "<group>"; };
+		0B5278212A6150A800BF2E85 /* PreviewImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewImageView.swift; sourceTree = "<group>"; };
 		0B55638E2A5FDCD300A70F89 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		0B5563902A5FDD4600A70F89 /* Image+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Extensions.swift"; sourceTree = "<group>"; };
 		0B5563922A5FE13800A70F89 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
@@ -130,6 +136,7 @@
 				0B3F7B5E2A43F8EE00136825 /* AppState.swift */,
 				0B339F202A457EB50054B29B /* Group.swift */,
 				0B13D6F22A5E5A110063BADA /* ChatMessage.swift */,
+				0B52781F2A61357300BF2E85 /* GroupDetailConfig.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -148,6 +155,8 @@
 				0B92DC442A5EF86F0012064E /* ChatMessageView.swift */,
 				0B55638E2A5FDCD300A70F89 /* SettingsView.swift */,
 				0B5563922A5FE13800A70F89 /* ImagePicker.swift */,
+				0B52781D2A61353700BF2E85 /* ChatMessageInputView.swift */,
+				0B5278212A6150A800BF2E85 /* PreviewImageView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -256,10 +265,13 @@
 				0B5563932A5FE13800A70F89 /* ImagePicker.swift in Sources */,
 				0B9E06D42A3AEC3E00BF8DA4 /* Model.swift in Sources */,
 				0B3F7B5F2A43F8EE00136825 /* AppState.swift in Sources */,
+				0B5278222A6150A800BF2E85 /* PreviewImageView.swift in Sources */,
 				0B5563912A5FDD4600A70F89 /* Image+Extensions.swift in Sources */,
 				0BBF9FCD2A39731700685FD3 /* String+Extensions.swift in Sources */,
 				0B13D6F32A5E5A110063BADA /* ChatMessage.swift in Sources */,
 				0B5278182A60F5AB00BF2E85 /* UIImagePickerController.SourceType+Extensions.swift in Sources */,
+				0B5278202A61357300BF2E85 /* GroupDetailConfig.swift in Sources */,
+				0B52781E2A61353700BF2E85 /* ChatMessageInputView.swift in Sources */,
 				0B8E680A2A386D9C00066701 /* ContentView.swift in Sources */,
 				0B3F7B612A44372300136825 /* GroupListContainerView.swift in Sources */,
 				0BBF9FCA2A3965AF00685FD3 /* SignUpView.swift in Sources */,
@@ -398,6 +410,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WhatsUp/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "WhatsUp Required Access Your Camera!";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -427,6 +441,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WhatsUp/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "WhatsUp Required Access Your Camera!";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
