@@ -13,7 +13,7 @@ struct GroupDetailView: View {
     
     let group: Group
     @EnvironmentObject private var model: Model
-    @State private var chatText: String = ""
+    @EnvironmentObject private var appState: AppState
     @State private var groupDetailConfig = GroupDetailConfig()
     @FocusState private var isChatTextFieldFocused: Bool
     
@@ -41,6 +41,7 @@ struct GroupDetailView: View {
     
     private func clearFields() {
         groupDetailConfig.clearForm()
+        appState.loadingState = .idle
     }
     
     var body: some View {
@@ -93,6 +94,7 @@ struct GroupDetailView: View {
                 // send the message
                 Task {
                     do {
+                        appState.loadingState = .loading("Sending...")
                         try await sendMessage()
                         clearFields()
                     } catch {
@@ -116,5 +118,6 @@ struct GroupDetailView_Previews: PreviewProvider {
     static var previews: some View {
         GroupDetailView(group: Group(subject: "Movies"))
             .environmentObject(Model())
+            .environmentObject(AppState())
     }
 }
